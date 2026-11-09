@@ -35,21 +35,6 @@ pokemon_battles/
 
 The competition data are not included: on Kaggle they are attached to the notebook as input.
 
-## How to run
-
-**On Kaggle.** Create a notebook from the competition page (*Code → New Notebook*, so the data are attached),
-import `kaggle_notebook.ipynb` (*File → Import Notebook*), turn **Internet** on in the notebook settings and run all
-cells. The three csv files appear in `/kaggle/working`. The whole notebook takes a few minutes on CPU.
-
-**Locally.**
-
-```bash
-pip install -r requirements.txt
-python make_submissions.py --data-dir path/to/competition/files --out-dir .
-```
-
-`--data-dir` is the folder with `train.jsonl`, `test.jsonl`, `sample_submission.csv` and `type_chart_gen2.csv`.
-
 ## Method in brief
 
 * **Validation.** One 5-fold `StratifiedKFold` (shuffled, seed 42) for every experiment, compared fold by fold;

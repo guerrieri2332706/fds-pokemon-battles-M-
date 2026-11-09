@@ -1,5 +1,0 @@
-numpy>=1.26
-pandas>=2.1
-scikit-learn>=1.4
-# only for the tables shown in the notebook (pandas Styler); already installed on Kaggle
-jinja2
